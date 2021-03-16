@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { render } from '@testing-library/react';
+//import { render } from '@testing-library/react';
 import { Navbar, NavbarBrand } from 'reactstrap';
+
+import Menu from './components/MenuComponent';
 
 class App extends Component {
   render() {
@@ -13,6 +15,7 @@ class App extends Component {
             <NavbarBrand href="/">Blog</NavbarBrand>
           </div>
         </Navbar>
+        <Menu />
       </div>
     );
   } 
