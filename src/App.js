@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 //import { render } from '@testing-library/react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 
 import Menu from './components/MenuComponent';
+import { MENUS } from './shared/menus';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menus: MENUS
+    };
+  }
   render() {
     return (
       <div className="App">
@@ -15,7 +22,7 @@ class App extends Component {
             <NavbarBrand href="/">Blog</NavbarBrand>
           </div>
         </Navbar>
-        <Menu />
+        <Menu menus={this.state.menus} />
       </div>
     );
   } 
