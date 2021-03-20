@@ -1,0 +1,630 @@
+Naredbe na komandnoj liniji i skript za kopiranje
+
+Video 1: Škola React 1. dio
+
+Skinite i instalirajte na svoje računalo Git, Node.js, Yarn
+preporučujem Editor teksta VSC
+Na komandnoj liniji tipkam:
+c:\xampp\htdocs\coursera\react>
+c:\xampp\htdocs\coursera\react>yarn global add create-react-app@1.5.2
+c:\xampp\htdocs\coursera\react>create-react-app nazivVašeReactAplikacije na primjer reactblog
+c:\xampp\htdocs\coursera\react>cd reactblog
+c:\xampp\htdocs\coursera\react\reactblog>
+c:\xampp\htdocs\coursera\react\reactblog>yarn start
+
+Git commit je učinio React umjesto nas. Sve sljedeće commit činimo mi. 
+Ne zaboravite činiti commit.
+
+Video 2: Škola React 2. dio Git prve naredbe vezane za povezivanje 
+lokalnog i udaljenog git repozitorija
+
+c:\xampp\htdocs\coursera\react\reactblog>git log --oneline
+c:\xampp\htdocs\coursera\react\reactblog>git remote add origin URLudaljenogRepositorija
+c:\xampp\htdocs\coursera\react\reactblog>git push -u origin master
+
+Video 3: Škola React 3. dio Od funkcijske komponente do class komponente
+
+App.js:
+
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { render } from '@testing-library/react';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    );
+  } 
+}
+export default App;
+
+Naredbe na komandnoj liniji:
+
+Ctrl+c
+y
+Enter
+yarn start
+git status
+git add .
+git commit -m "From functional component to class componente"
+
+Video 4: Škola React 4. dio Bootstrap, Reactstrap, React-Popper
+
+yarn add bootstrap@4.0.0
+yarn add reactstrap@5.0.0
+yarn add react-popper@0.9.2
+
+index.js:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+App.js:
+import { Navbar, NavbarBrand } from 'reactstrap';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Blog</NavbarBrand>
+          </div>
+        </Navbar>
+      </div>
+    );
+  }
+}
+
+Komandna linija:
+Ctrl+c
+y
+Enter
+git add .
+git commit -m "Configuration Bootstrap, Reactstrap, React-Popper"
+git push -u origin
+
+Video 5: Škola React 5. dio Prva class komponenta koju sami radimo
+
+public/assets/images
+src/components/MenuComponent.js:
+
+import React, { Component } from 'react';
+import { Media } from 'reactstrap';
+
+
+class Menu extends Component {
+    
+    constructor(props) {
+    
+        super(props);
+
+        
+        this.state = {
+          menus: [
+            {
+                menu_id: 1,
+                name:'Lorem ipsum dolor',
+                image: 'assets/images/1.jpg',
+                content:'Lorem ipsum dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+                published:'2021-03-012'},
+                
+            {
+                menu_id: 2,
+                name:'Consectetur adipiscing',
+                image: 'assets/images/2.jpg',
+                content:'Consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',            
+                published:'2021-03-012'},
+            {
+                menu_id: 3,
+                name:'Dolor sit amet',
+                image: 'assets/images/3.jpg',
+                content:'Dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+                published:'2021-03-012'},
+            {           
+                menu_id: 4,
+                name:'Orci ligula',
+                image: 'assets/images/4.jpg',
+                content:'Orci ligula dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+                published:'2021-03-012'}
+        ]    
+      };
+    }
+ 
+    render() {
+      const menu = this.state.menus.map((menu) => {
+          return (
+            <div key={menu.menu_id} className="col-12 mt-5">
+              <Media tag="li">
+                <Media left middle>
+                    <Media object src={menu.image} alt={menu.name} />
+                </Media>
+                <Media body className="ml-5">
+                  <Media heading>{menu.name}</Media>
+                  <p>{menu.content}</p>
+                </Media>
+              </Media>
+            </div>
+          );
+      });
+
+        return (
+            <div className="container">
+              <div className="row">
+                <Media list>
+                    {menu}
+                </Media>
+              </div>
+            </div>
+          );
+      }
+  }
+  
+  export default Menu;
+
+  App.js:
+
+  import Menu from './components/MenuComponent';
+
+. . .
+
+    <Menu />
+    
+    . . .
+
+App.css:
+Obriši sav css
+
+ctrl+css
+y
+Enter
+git add .
+git commit -m "My first class component Menu"
+git push -u origin
+git log --oneline
+
+Video 6: Škola React 6. Tijek renderiranja Home Page
+
+Video 7: Škola React 7. dio Rezime dosad učinjenog
+
+Video 8: Škola React 8.dio Prijenos statea u komponentu 
+više razine i pojava propsa na komponenti niže razine
+
+src/shared/menus.js:
+export const MENUS = 
+    [
+        {
+        menu_id: 1,
+        name:'Lorem ipsum dolor',
+        image: 'assets/images/1.jpg',
+        content:'Lorem ipsum dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+        published:'2021-03-012',
+        comments: [
+            {
+            id: 1,
+            rating: 5,
+            comment: "OJkld d, l, dms d,ms dsm, ds",
+            author: "KLnslkcx kl",
+            date: "2021-03-16T17:57:28.556094Z"
+            },
+            {
+            id: 2,
+            rating: 4,
+            comment: "Pl,čcdlc dc dcf pldcv dc dlcv dlc dc",
+            author: "PKOmdswmd",
+            date: "2020-09-05T17:57:28.556094Z"
+            },
+            {
+            id: 3,
+            rating: 3,
+            comment: "POIkpodm sdks klsd s",
+            author: "Onmodmksaxd",
+            date: "2015-02-13T17:57:28.556094Z"
+            },
+            {
+            id: 4,
+            rating: 4,
+            comment: "LOKmlkcx scx sc ",
+            author: "POmxs,dlp",
+            date: "2013-12-02T17:57:28.556094Z"
+            },
+            {
+            id: 5,
+            rating: 2,
+            comment: "Šlx čclv , bvmkbvbmv bvnjkb v bnv",
+            author: "LP,sld sl ds",
+            date: "2011-12-02T17:57:28.556094Z"
+            }
+        ]},
+        {
+            menu_id: 2,
+            name:'Consectetur adipiscing',
+            image: 'assets/images/2.jpg',
+            content:'Consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+            published:'2021-03-012',
+        comments: [
+            {
+            id: 0,
+            rating: 5,
+            comment: "KLlcfdmfkjm kjd fdjvf",
+            author: "ČLPm,slcxds",
+            date: "2012-10-16T17:57:28.556094Z"
+            },
+            {
+            id: 1,
+            rating: 4,
+            comment: "JKLal asld md smd smd smld sds mdsld sdlks dlksd sld slkd ld s",
+            author: "Anjsbcis cskmc",
+            date: "2014-09-05T17:57:28.556094Z"
+            },
+            {
+            id: 2,
+            rating: 3,
+            comment: "ČPLm,cv dcfmndc dnkc dkcv dkc",
+            author: "PL,kcm skc socs",
+            date: "2015-02-13T17:57:28.556094Z"
+            },
+            {
+            id: 3,
+            rating: 5,
+            comment: "LKmcl sxmck cmkxc kxmc xmkcx",
+            author: "ČL,cl ,cl lc,x cl,x cx",
+            date: "2013-12-02T17:57:28.556094Z"
+            },
+            {
+            id: 4,
+            rating: 3,
+            comment: "POmjklc slkc xslkc xlkc xc",
+            author: "KLPmklxmasx",
+            date: "2011-12-02T17:57:28.556094Z"
+            }
+        ]
+        },
+        {
+            menu_id: 3,
+            name:'Dolor sit amet',
+            image: 'assets/images/3.jpg',
+            content:'Dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+            published:'2021-03-012',
+        comments: [
+            {
+            id: 0,
+            rating: 2,
+            comment: "ČL,mcxl scl, clc lsdc",
+            author: "LKMlkx ,x lx s",
+            date: "2012-10-16T17:57:28.556094Z"
+            },
+            {
+            id: 1,
+            rating: 4,
+            comment: "KLmvk dmkvdkv dvkd vd vdv",
+            author: "POMkmc sklcs",
+            date: "2014-09-05T17:57:28.556094Z"
+            },
+            {
+            id: 2,
+            rating: 3,
+            comment: "KNMkn cklsc sxlc",
+            author: "Michael",
+            date: "2015-02-13T17:57:28.556094Z"
+            },
+            {
+            id: 3,
+            rating: 4,
+            comment: "OImklomcxls smklc s sc sc sc!",
+            author: "Starry",
+            date: "2013-12-02T17:57:28.556094Z"
+            },
+            {
+            id: 4,
+            rating: 2,
+            comment: "POKmkc slc sm,cls clms cslmc slmc",
+            author: "AB",
+            date: "2011-12-02T17:57:28.556094Z"
+            }
+        ]
+        },
+        {
+            menu_id: 4,
+            name:'Orci ligula',
+            image: 'assets/images/4.jpg',
+            content:'Orci ligula dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante',
+            published:'2021-03-012',
+        comments: [
+            {
+            id: 0,
+            rating: 2,
+            comment: "OIJonckm ckc knc knc scksc sjkics",
+            author: "Lemon",
+            date: "2012-10-16T17:57:28.556094Z"
+            },
+            {
+            id: 1,
+            rating: 4,
+            comment: "OMokmd kl dlcv dlmvd vldv dklv d",
+            author: "McVites",
+            date: "2014-09-05T17:57:28.556094Z"
+            },
+            {
+            id: 2,
+            rating: 3,
+            comment: "KLOnmakc skc skcjmsd",
+            author: "MJaikishan",
+            date: "2015-02-13T17:57:28.556094Z"
+            },
+            {
+            id: 3,
+            rating: 4,
+            comment: "OJKNkm cmlsc mkc mkc dkc",
+            author: "RiStarry",
+            date: "2013-12-02T17:57:28.556094Z"
+            },
+            {
+            id: 4,
+            rating: 2,
+            comment: "OKmokc slkmc smklc scs cjklos",
+            author: "Cent",
+            date: "2011-12-02T17:57:28.556094Z"
+            }
+        ]
+        }
+    ];
+
+MenuComponent.js:
+import React, { Component } from 'react';
+import { Media } from 'reactstrap';
+
+
+class Menu extends Component {
+  render() {
+    const menu = this.props.menus.map((menu) => {
+        return (
+          <div key={menu.menu_id} className="col-12 mt-5">
+            <Media tag="li">
+              <Media left middle>
+                  <Media object src={menu.image} alt={menu.name} />
+              </Media>
+              <Media body className="ml-5">
+                <Media heading>{menu.name}</Media>
+                <p>{menu.content}</p>
+              </Media>
+            </Media>
+          </div>
+        );
+    });
+
+        return (
+            <div className="container">
+              <div className="row">
+                <Media list>
+                    {menu}
+                </Media>
+              </div>
+            </div>
+          );
+      }
+  }
+  
+  export default Menu;      
+
+  App.js:
+  import React, { Component } from 'react';
+//import logo from './logo.svg';
+import './App.css';
+//import { render } from '@testing-library/react';
+import { Navbar, NavbarBrand } from 'reactstrap';
+
+import Menu from './components/MenuComponent';
+import { MENUS } from './shared/menus';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menus: MENUS
+    };
+  }
+  render() {
+    return (
+      <div className="App">
+        <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Blog</NavbarBrand>
+          </div>
+        </Navbar>
+        <Menu menus={this.state.menus} />
+      </div>
+    );
+  } 
+}
+export default App;
+
+Komandna linija:
+ctrl+c
+y
+Enter
+yarn start
+git add .
+git commit -u "State and props"
+git push -u origin
+
+Video 9: Škola React 9. dio Moj prvi CMS u Reactu
+import React, { Component } from 'react';
+//import { Media } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+  CardTitle } from 'reactstrap';
+
+class Menu extends Component {constructor(props) {
+  super(props);
+  this.state = {
+      selectedMenu: null
+  }
+}
+
+onMenuSelect(menu) {
+  this.setState({ selectedMenu: menu});
+}
+
+renderMenu(menu) {
+  if (menu != null)
+      return(
+          <Card>
+              <CardImg top src={menu.image} alt={menu.name} />
+              <CardBody>
+                <CardTitle>{menu.name}</CardTitle>
+                <CardText>{menu.content}</CardText>
+              </CardBody>
+          </Card>
+      );
+  else
+      return(
+          <div></div>
+      );
+}
+
+render() {
+  const menu = this.props.menus.map((menu) => {
+      return (
+        <div  className="col-12 col-md-5 m-1">
+          <Card key={menu.menu_id}
+            onClick={() => this.onMenuSelect(menu)}>
+            <CardImg width="100%" src={menu.image} alt={menu.name} />
+            <CardImgOverlay>
+                <CardTitle>{menu.name}</CardTitle>
+            </CardImgOverlay>
+          </Card>
+        </div>
+      );
+  });
+
+  return (
+      <div className="container">
+          <div className="row">
+              {menu}
+          </div>
+          <div className="row">
+            <div  className="col-12 m-1">
+              {this.renderMenu(this.state.selectedMenu)}
+            </div>
+          </div>
+      </div>
+  );
+}
+  }
+  
+  export default Menu;      
+
+Komandna linija:
+  ctrl+c
+  y
+  Enter
+  yarn start
+  git add .
+  git commit -m "My first CMS"
+  git push -u origin
+
+  Video 10: Škola React 10 dio Lyfecycles of every React component
+
+  MenuComponent.js:
+  import React, { Component } from 'react';
+//import { Media } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+  CardTitle } from 'reactstrap';
+
+class Menu extends Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+      selectedMenu: null
+  }
+  console.log('Menu component constructor is invoked');
+  alert('Menu component constructor is invoked');
+}
+
+componentDidMount() {
+  console.log('Menu component componentDidMount is invoked');
+  alert('Menu component componentDidMount is invoked');
+}
+
+onMenuSelect(menu) {
+  this.setState({ selectedMenu: menu});
+}
+
+renderMenu(menu) {
+  if (menu != null)
+      return(
+          <Card>
+              <CardImg top src={menu.image} alt={menu.name} />
+              <CardBody>
+                <CardTitle>{menu.name}</CardTitle>
+                <CardText>{menu.content}</CardText>
+              </CardBody>
+          </Card>
+      );
+  else
+      return(
+          <div></div>
+      );
+}
+
+render() {
+  const menu = this.props.menus.map((menu) => {
+      return (
+        <div  className="col-12 col-md-5 m-1">
+          <Card key={menu.menu_id}
+            onClick={() => this.onMenuSelect(menu)}>
+            <CardImg width="100%" src={menu.image} alt={menu.name} />
+            <CardImgOverlay>
+                <CardTitle>{menu.name}</CardTitle>
+            </CardImgOverlay>
+          </Card>
+        </div>
+      );
+  });
+  console.log('Menu component render is invoked');
+  alert('Menu component render is invoked');
+  return (
+      <div className="container">
+          <div className="row">
+              {menu}
+          </div>
+          <div className="row">
+            <div  className="col-12 m-1">
+              {this.renderMenu(this.state.selectedMenu)}
+            </div>
+          </div>
+      </div>
+  );
+}
+  }
+  
+  export default Menu;      
+
+  ctrl+c
+  y
+  Enter
+  yarn start
+  git add .
+  git commit -u "Lifecycles of every React component"
+  git push -u origin
+
+  Video 11: Škola React 11. dio Izmjene skripta i 
+  brisanje istih prije nego smo te izmjene commit
+
+  Video 12: 
+

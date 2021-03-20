@@ -9,14 +9,10 @@ class Menu extends Component {
   this.state = {
       selectedMenu: null
   }
-  console.log('Menu component constructor is invoked');
-  alert('Menu component constructor is invoked');
+  
 }
 
-componentDidMount() {
-  console.log('Menu component componentDidMount is invoked');
-  alert('Menu component componentDidMount is invoked');
-}
+
 
 onMenuSelect(menu) {
   this.setState({ selectedMenu: menu});
@@ -53,8 +49,7 @@ render() {
         </div>
       );
   });
-  console.log('Menu component render is invoked');
-  alert('Menu component render is invoked');
+  
   return (
       <div className="container">
           <div className="row">
