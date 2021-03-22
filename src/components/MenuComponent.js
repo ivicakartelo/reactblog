@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import { Media } from 'reactstrap';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
   CardTitle } from 'reactstrap';
+import Menudetail from './MenudetailComponent';
 
 class Menu extends Component {
   constructor(props) {
@@ -52,12 +53,21 @@ render() {
   
   return (
       <div className="container">
+
           <div className="row">
               {menu}
           </div>
+
           <div className="row">
             <div  className="col-12 m-1">
               {this.renderMenu(this.state.selectedMenu)}
+            </div>
+          </div>
+          
+
+          <div className="row">
+            <div  className="col-12 m-1">
+            <Menudetail selectedMenu={this.state.selectedMenu} />
             </div>
           </div>
       </div>
