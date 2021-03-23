@@ -9,70 +9,70 @@ class Menu extends Component {
   super(props);
   this.state = {
       selectedMenu: null
+    } 
   }
-  
-}
 
+  onMenuSelect(menu) {
+    this.setState({ selectedMenu: menu});
+  }
 
-
-onMenuSelect(menu) {
-  this.setState({ selectedMenu: menu});
-}
-
-renderMenu(menu) {
-  if (menu != null)
+  renderMenu(menu) {
+    if (menu != null)
       return(
+        <div className="row">
+        <div  className="col-12 col-sm-6">
           <Card>
-              <CardImg top src={menu.image} alt={menu.name} />
-              <CardBody>
-                <CardTitle>{menu.name}</CardTitle>
-                <CardText>{menu.content}</CardText>
-              </CardBody>
+            <CardImg top src={menu.image} alt={menu.name} />
+            <CardBody>
+              <CardTitle>{menu.name}</CardTitle>
+              <CardText>{menu.content}</CardText>
+            </CardBody>
           </Card>
+          </div>
+          <div  className="col-12 col-sm-6">
+          <Card>
+            <CardImg top src={menu.image} alt={menu.name} />
+            <CardBody>
+              <CardTitle>{menu.name}</CardTitle>
+              <CardText>{menu.content}</CardText>
+            </CardBody>
+          </Card>
+        </div></div>
       );
-  else
+    else
       return(
-          <div></div>
+        <div></div>
       );
 }
 
-render() {
-  const menu = this.props.menus.map((menu) => {
-      return (
-        <div  className="col-12 col-md-5 m-1">
+  render() {
+    const menu = this.props.menus.map((menu) => {
+    return (
+        <div  className="col-sm-6">
           <Card key={menu.menu_id}
             onClick={() => this.onMenuSelect(menu)}>
-            <CardImg width="100%" src={menu.image} alt={menu.name} />
+            <CardImg src={menu.image} alt={menu.name} />
             <CardImgOverlay>
                 <CardTitle>{menu.name}</CardTitle>
             </CardImgOverlay>
           </Card>
         </div>
       );
-  });
+    });
   
-  return (
+    return (
       <div className="container">
-
-          <div className="row">
-              {menu}
-          </div>
-
-          <div className="row">
-            <div  className="col-12 m-1">
-              {this.renderMenu(this.state.selectedMenu)}
-            </div>
-          </div>
-          
-
-          <div className="row">
-            <div  className="col-12 m-1">
-            <Menudetail selectedMenu={this.state.selectedMenu} />
-            </div>
-          </div>
+        <div className="row">          
+          {menu}             
+        </div>
+        <div className="row">            
+          {this.renderMenu(this.state.selectedMenu)}           
+        </div>
+        <div className="row">          
+          <Menudetail selectedMenu={this.state.selectedMenu} />          
+        </div>
       </div>
-  );
-}
+    );
   }
-  
-  export default Menu;      
+}  
+export default Menu;      
