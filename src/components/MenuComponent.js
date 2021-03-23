@@ -49,12 +49,14 @@ class Menu extends Component {
     const menu = this.props.menus.map((menu) => {
     return (
         <div  className="col-sm-6">
-          <Card key={menu.menu_id}
-            onClick={() => this.onMenuSelect(menu)}>
+          <Card key={menu.menu_id} onClick={() => this.onMenuSelect(menu)}>
             <CardImg src={menu.image} alt={menu.name} />
             <CardImgOverlay>
-                <CardTitle>{menu.name}</CardTitle>
+              <CardTitle>{menu.name}</CardTitle>
             </CardImgOverlay>
+            <CardBody>
+              <p>dsčlk,fldsf,sdčlfć,fsldfms,ć</p>
+            </CardBody>
           </Card>
         </div>
       );
@@ -65,9 +67,9 @@ class Menu extends Component {
         <div className="row">          
           {menu}             
         </div>
-        <div className="row">            
+                    
           {this.renderMenu(this.state.selectedMenu)}           
-        </div>
+        
         <div className="row">          
           <Menudetail selectedMenu={this.state.selectedMenu} />          
         </div>
