@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Media } from 'reactstrap';
+
+import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+  CardTitle } from 'reactstrap';
 
 class Menudetail extends Component {
   render() {
@@ -8,34 +10,22 @@ class Menudetail extends Component {
         return (
         <div className="container">
           <div className="row">               
-            <div className="col-6 mt-5">
-              <Media width="100%" object src={menudetail.image} alt={menudetail.name} />
-              <Media body>
-                <div className="mt-4">
-
-                <Media heading>{menudetail.name}
-                </Media>
-                </div>
-                <p>{menudetail.content}</p>
-              </Media>
-              
+            <div className="col-12 mt-5">
+            <Card>
+            <CardImg top src={menudetail.image} alt={menudetail.name} />
+            <CardBody>
+              <CardTitle>{menudetail.name}</CardTitle>
+              <CardText>{menudetail.content}</CardText>
+            </CardBody>
+          </Card>             
             </div>
-            <div className="col-6 mt-5">
-              <Media width="100%" object src={menudetail.image} alt={menudetail.name} />
-              <Media body>
-              <div className="mt-4">
-                <Media heading>{menudetail.name}
-                </Media>
-                </div>
-                <p>{menudetail.content}</p>
-              </Media>
-            </div>
+            
           </div>
         </div>
         );
     else
       return(
-        <div></div>
+        <div>dfsdfsdfsdfdsfsdfsdfsdfsdfsdffds</div>
     );        
   }
 }
