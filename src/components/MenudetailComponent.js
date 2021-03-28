@@ -25,7 +25,7 @@ class Menudetail extends Component {
         );
     else
       return(
-        <div>dfsdfsdfsdfdsfsdfsdfsdfsdfsdffds</div>
+        <div></div>
     );        
   }
 }
