@@ -10,36 +10,36 @@ export const MENUS =
             {
             id: 1,
             rating: 5,
-            comment: "OJkld d, l, dms d,ms dsm, ds",
-            author: "KLnslkcx kl",
+            comment: "OJkld d, l, dms d,ms dsm, dsOJkld d, l, dms d,ms dsm, dsOJkld d, l, dmOJkld d, l, dms d,ms dsm, dsOJkld d, l, dms d,ms dsm, dsOJkld d, l, dmOJkld d, l, dms d,ms dsm, dsOJkld d, l, dms d,ms dsm, dsOJkld d, l, dm",
+            author: "Carol",
             date: "2021-03-16T17:57:28.556094Z"
             },
             {
             id: 2,
             rating: 4,
-            comment: "Pl,čcdlc dc dcf pldcv dc dlcv dlc dc",
-            author: "PKOmdswmd",
+            comment: "Pl,čcdlc dc dcf pldcv dc dlcv dlc dcPl,čcdlc dc dcf pldcv dc dlcv dlc dcPl,čcdlc dc dcf pldcv dc dlcv dlc dc",
+            author: "Paul",
             date: "2020-09-05T17:57:28.556094Z"
             },
             {
             id: 3,
             rating: 3,
-            comment: "POIkpodm sdks klsd s",
-            author: "Onmodmksaxd",
+            comment: "POIkpodm sdks klsdPOIkpodm sdks klsdPOIkpodm sdks klsdPOIkpodm sdks klsdPOIkpodm sdks klsd s",
+            author: "Oco",
             date: "2015-02-13T17:57:28.556094Z"
             },
             {
             id: 4,
             rating: 4,
-            comment: "LOKmlkcx scx sc ",
-            author: "POmxs,dlp",
+            comment: "LOKmlkcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx kcx scx sc ",
+            author: "Vince",
             date: "2013-12-02T17:57:28.556094Z"
             },
             {
             id: 5,
             rating: 2,
-            comment: "Šlx čclv , bvmkbvbmv bvnjkb v bnv",
-            author: "LP,sld sl ds",
+            comment: "Šlx čclv , bvmkbvbmv bvnjkb v bnvŠlx čclv , bvmkbvbmv bvnjkb v bnvŠlx čclv , bvmkbvbmv bvnjkb v bnv",
+            author: "Lea",
             date: "2011-12-02T17:57:28.556094Z"
             }
         ]},

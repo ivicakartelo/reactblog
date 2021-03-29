@@ -18,12 +18,16 @@ class App extends Component {
     return (
       <div>   
         <Navbar dark color="primary">
-          <div className="container"> 
-            <NavbarBrand href="/">Blog</NavbarBrand>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+              <NavbarBrand href="/">Blog</NavbarBrand>
+              </div>
+            </div>
           </div> 
         </Navbar>
-        <Menu menus={this.state.menus} />
-      </div>      
+          <Menu menus={this.state.menus} />         
+      </div>
     );
   } 
 }
