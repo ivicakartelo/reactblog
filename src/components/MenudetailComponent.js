@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
   CardTitle } from 'reactstrap';
 
 class Menudetail extends Component {
-  
+
   renderMenudetails(y) {
     return (
       <Card>
@@ -44,15 +43,17 @@ class Menudetail extends Component {
     );
   }
     render() {
-      if (this.props.selectedMenu != null) {
-        return (         
+      if (this.props.menu != null) {
+        return ( 
+        <div className="container">        
           <div className="row">
             <div className="col-12 col-sm-6">
-              {this.renderMenudetails(this.props.selectedMenu)}
+              {this.renderMenudetails(this.props.menu)}
             </div>
             <div className="col-12 col-sm-6">
-              {this.renderComments(this.props.selectedMenu.comments)}
+              {this.renderComments(this.props.menu.comments)}
             </div>
+          </div>
           </div>            
         );
     }
