@@ -14,11 +14,22 @@ class Main extends Component {
     };
   }
 
+  componentDidMount() {
+    console.log("Main Component componentDidMount invoked");
+}
+
+  componentDidUpdate() {
+    console.log("Main Component componentDidUpdate invoked");
+}
+
   onMenuSelect(menuId) {
     this.setState({ selectedMenu: menuId});
   }
 
   render() {
+
+    console.log("Main Component render invoked");
+
     return (
       <div>
         <Navbar dark color="primary">

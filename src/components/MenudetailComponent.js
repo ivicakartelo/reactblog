@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
 
 class Menudetail extends Component {
+
+  componentDidMount() {
+    console.log("Menudetail Component componentDidMount invoked");
+}
+
+  componentDidUpdate() {
+    console.log("Menudetail Component componentDidUpdate invoked");
+}
 
   renderMenudetails(y) {
     return (
@@ -43,6 +51,9 @@ class Menudetail extends Component {
     );
   }
     render() {
+
+      console.log("Menudetail Component render invoked");
+
       if (this.props.menu != null) {
         return ( 
         <div className="container">        

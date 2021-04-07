@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Card, CardImg, CardImgOverlay,
   CardTitle } from 'reactstrap';
 
 class Menu extends Component {
+
+  componentDidMount() {
+    console.log("Menu Component componentDidMount invoked");
+}
+
+  componentDidUpdate() {
+    console.log("Menu Component componentDidUpdate invoked");
+}
   
   render() {
+
+    console.log("Menu Component render invoked");
+
     const menu = this.props.menus.map((menu) => {
     return ( 
-      <div className="col-12 col-sm-3">
-        <Card key={menu.menu_id} onClick={() => this.props.onClick(menu.menu_id)}>
+      <div key={menu.menu_id} className="col-12 col-sm-3">
+        <Card onClick={() => this.props.onClick(menu.menu_id)}>
             <CardImg src={menu.image} alt={menu.name} />
             <CardImgOverlay>
               <CardTitle>{menu.name}</CardTitle>
