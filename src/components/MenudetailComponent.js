@@ -56,16 +56,15 @@ class Menudetail extends Component {
 
       if (this.props.menu != null) {
         return ( 
-        <div className="container">        
-          <div className="row">
-            <div className="col-12 col-sm-6">
+        <div>
+          <div>
               {this.renderMenudetails(this.props.menu)}
             </div>
-            <div className="col-12 col-sm-6">
+            <div>
               {this.renderComments(this.props.menu.comments)}
             </div>
-          </div>
-          </div>            
+        </div>
+                        
         );
     }
     else {

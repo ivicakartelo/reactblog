@@ -37,8 +37,19 @@ class Main extends Component {
             <NavbarBrand href="/">Blog</NavbarBrand>
           </div>
         </Navbar>
-        <Menu menus={this.state.menus} onClick={(menuId) => this.onMenuSelect(menuId)} />
-        <MenuDetail menu={this.state.menus.filter((menu) => menu.menu_id === this.state.selectedMenu)[0]} />
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-4">
+              <Menu menus={this.state.menus} onClick={(menuId) => this.onMenuSelect(menuId)} />
+            </div>
+            <div className="col-12 col-sm-8">
+              <MenuDetail menu={this.state.menus.filter((menu) => menu.menu_id === this.state.selectedMenu)[0]} />
+          </div>
+        </div>
+        
+        </div>
+        
+        
       </div>
     );
   }

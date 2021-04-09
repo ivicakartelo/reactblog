@@ -627,4 +627,22 @@ render() {
   brisanje istih prije nego smo te izmjene commit
 
   Video 12: 
+  Obrisao sam "Lyfecycles of every React component" tipkano u videu 10.
 
+  Video 13:
+  Ponavljanje od 1. do 12. videa.
+
+  Video 14:
+  Još o stateu i propsu. Nema novog koda, samo objašnjenje.
+
+  Video 15:
+  Škola React 15. dio: Map, CallBack, Arrow funkcija, Closures, Lexical Scoping
+  Samo objašnjenje, nema novog koda u aplikaciji
+
+  Video 16:
+  Škola React 16. dio Testirajte do sad stečeno znanje
+  Nema novog koda u aplikaciji.
+
+  Video 17:
+  Škola React 17. dio Kodiranje komponente Menudetail i ugradnja iste u komponentu Menu
+  Cijeli kod je na adresi: 
