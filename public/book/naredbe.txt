@@ -643,6 +643,39 @@ render() {
   Škola React 16. dio Testirajte do sad stečeno znanje
   Nema novog koda u aplikaciji.
 
-  Video 17:
-  Škola React 17. dio Kodiranje komponente Menudetail i ugradnja iste u komponentu Menu
-  Cijeli kod je na adresi: 
+  Video 17: Škola React 17. dio Kodiranje komponente Menudetail i ugradnja iste u komponentu Menu
+  URL: https://www.youtube.com/watch?v=DmmucVwOVNU&list=PLvYzjHQxr_s3cjOVuE2EU94FUkSEJtcea&index=7&t=102s
+  Gist: https://gist.github.com/ivicakartelo/82ee991baf85dfbb7a4e19f381664044
+  GitHub: GitHub: https://github.com/ivicakartelo/reactblog
+
+Video 18: https://www.youtube.com/watch?v=jt8pOCBSSVc&list=PLvYzjHQxr_s3cjOVuE2EU94FUkSEJtcea&index=6&t=149s
+Škola React 18. dio MenudetailComponent s detaljima posta i pripadajućim komentarima
+Commit: Menudetail and comments final
+Gist: https://gist.github.com/ivicakartelo/d23460b3ef6092272e6912dd1c1c2aa7
+GitHub: https://github.com/ivicakartelo/reactblog
+
+Video 19: 
+Škola React 19. dio Script, Binarni kod, Scope aplikacije i varijabli
+Nema novog koda u aplikaciji
+
+Video 20
+Škola React 20. dio commit "Presentational and Container Components"
+Gist: https://gist.github.com/ivicakartelo/592fd59aac9a807bf0e7146869e1e4cd
+
+Video 21:
+Škola React 21. dio Životni ciklusi svake komponente 2
+Gist: https://gist.github.com/ivicakartelo/19e6eb8c384318615632e39b27e07842
+
+Video 22:
+Škola React 22. dio Clone repository
+Nema novog koda u React aplikaciji
+
+Video 23:
+Škola React 23. dio Bootstrap and Reactstrap Grid
+Gist: https://gist.github.com/ivicakartelo/3d427ebb9dd8e16e56984aa9e4a680b0
+GitHub: https://github.com/ivicakartelo/reactblog
+Commit: Grid manual and Bootstrap and Reactstrap
+
+
+
+
