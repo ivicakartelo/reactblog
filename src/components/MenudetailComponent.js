@@ -1,64 +1,70 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-  function RenderMenudetails(y) {
+  function RenderMenudetails({menu}) {
+    if (menu != null) {
     return (
+    <div>
       <Card>
-        <CardImg src={y.image} alt={y.name} />
+        <CardImg src={menu.image} alt={menu.name} />
         <CardBody>
-          <CardTitle>{y.name}</CardTitle>
-          <CardText>{y.content}</CardText>
+          <CardTitle>{menu.name}</CardTitle>
+          <CardText>{menu.content}</CardText>
         </CardBody>
-      </Card>             
+      </Card> 
+    </div>            
     );       
   }
+  else {
+    return (
+        <div></div>
+    );
+  }
+}
 
-  function RenderComments(z) {
-    const cmt = z.map((w) => {
-      return (
-        <li key={w.id}>
-          <p>{w.rating}</p>
-          <p>{w.comment}</p>
+  function RenderComments({menu}) {
+    if (menu != null && menu.comments != null) {
+
+      return menu.comments.map(review => (      
+        <div key={review.id}>
+          <div><h4>Comments</h4></div>
+          <div>
+          <p>{review.rating}</p>
+          <p>{review.comment}</p>
+          </div>
+          <div>
+                    
           <p>
-            -- {w.author}, &nbsp;
+            -- {review.author}, &nbsp;
           {new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
             month: 'long',
             day: '2-digit',
-          }).format(new Date(w.date))}
+          }).format(new Date(review.date))}
           </p>
-        </li>
-      )
-    })
-    return(
-      <div>
-        <h5>Comments</h5>
-          <ul className="list-unstyled">
-            {cmt}
-          </ul>
-      </div>
-    );
+          </div>
+        </div>
+      ));
   }
+        else {
+          return (
+              <div></div>
+          );
+      }
+  } 
   const  Menudetail = (props) => {
 
-      if (this.props.menu != null) {
-        return ( 
+      return ( 
         <div>
           <div>
               <RenderMenudetails menu={props.menu} />
             </div>
             <div>
-              <RenderComments comments={props.menu.comments} />
+              <RenderComments comments={props.menu} />
             </div>
         </div>
                         
         );
     }
-    else {
-      return (
-        <div></div>
-      );
-    }
-  }
+    
   export default Menudetail;
