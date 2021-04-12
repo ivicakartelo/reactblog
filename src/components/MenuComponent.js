@@ -6,8 +6,8 @@ function RenderMenuItem ({menu, onClick}) {
   //render() {
     //const menu = this.props.menus.map((menu) => {
     return ( 
-      <div key={menu.menu_id}>
-        <Card onClick={() => onClick(menu.menu_id)}>
+      <div>
+        <Card key={menu.menu_id} onClick={() => onClick(menu.menu_id)}>
             <CardImg src={menu.image} alt={menu.name} />
             <CardImgOverlay>
               <CardTitle>{menu.name}</CardTitle>

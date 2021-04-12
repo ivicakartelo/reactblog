@@ -676,6 +676,18 @@ Gist: https://gist.github.com/ivicakartelo/3d427ebb9dd8e16e56984aa9e4a680b0
 GitHub: https://github.com/ivicakartelo/reactblog
 Commit: Grid manual and Bootstrap and Reactstrap
 
+Video 24:
+MenuComponent and MenudetailComponent are now Functional Component
+GitHub: https://github.com/ivicakartelo/reactblog
+Gist: https://gist.github.com/ivicakartelo/bd98f990d442fcb9249723cb720cc52a
+1. Kopirajte MenuComponent.js i MenudetailComponent.js iz Gista u svoju aplikaciju
+2. Ako aplikacija radi, idete učiti redak po redak, isprintajte ili 
+rukom ispišite obje stranice na papir pa stavite papire jedan do drugog,
+olovku u ruke i pišite po papiru, označujte. Trebat će još 
+prakse za prebacivanje class komponenti u functional komponente, 
+a ovo su prvi primjeri, dobra podloga za guglati ovu temu i snati sve više.
+
+
 
 
 
