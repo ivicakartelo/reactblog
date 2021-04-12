@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './MenuComponent';
 import MenuDetail from './MenudetailComponent';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import { MENUS } from '../shared/menus';
 
 class Main extends Component {
@@ -14,29 +16,15 @@ class Main extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log("Main Component componentDidMount invoked");
-}
-
-  componentDidUpdate() {
-    console.log("Main Component componentDidUpdate invoked");
-}
-
   onMenuSelect(menuId) {
     this.setState({ selectedMenu: menuId});
   }
 
   render() {
 
-    console.log("Main Component render invoked");
-
     return (
       <div>
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Blog</NavbarBrand>
-          </div>
-        </Navbar>
+      <Header />
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-4">
@@ -46,10 +34,8 @@ class Main extends Component {
               <MenuDetail menu={this.state.menus.filter((menu) => menu.menu_id === this.state.selectedMenu)[0]} />
           </div>
         </div>
-        
-        </div>
-        
-        
+        </div> 
+        <Footer />
       </div>
     );
   }
