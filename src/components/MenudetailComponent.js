@@ -1,31 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
 
-class Menudetail extends Component {
 
-  componentDidMount() {
-    console.log("Menudetail Component componentDidMount invoked");
-}
 
-  componentDidUpdate() {
-    console.log("Menudetail Component componentDidUpdate invoked");
-}
-
-  renderMenudetails(y) {
+    function RenderMenudetails({menu}) {
     return (
       <Card>
-        <CardImg src={y.image} alt={y.name} />
+        <CardImg src={menu.image} alt={menu.name} />
         <CardBody>
-          <CardTitle>{y.name}</CardTitle>
-          <CardText>{y.content}</CardText>
+          <CardTitle>{menu.name}</CardTitle>
+          <CardText>{menu.content}</CardText>
         </CardBody>
       </Card>             
     );       
   }
 
-  renderComments(z) {
-    const cmt = z.map((w) => {
+  function RenderComments({comments}) {
+    const cmt = comments.map((w) => {
       return (
         <li key={w.id}>
           <p>{w.rating}</p>
@@ -35,7 +27,7 @@ class Menudetail extends Component {
           {new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
             month: 'long',
-            day: '2-digit',
+            day: '2-digit'
           }).format(new Date(w.date))}
           </p>
         </li>
@@ -50,18 +42,17 @@ class Menudetail extends Component {
       </div>
     );
   }
-    render() {
+  
+    const Menudetail = (props) => {
 
-      console.log("Menudetail Component render invoked");
-
-      if (this.props.menu != null) {
+      if (props.menu != null) {
         return ( 
         <div>
           <div>
-              {this.renderMenudetails(this.props.menu)}
+              <RenderMenudetails menu = {props.menu} />
             </div>
             <div>
-              {this.renderComments(this.props.menu.comments)}
+              <RenderComments comments = {props.menu.comments} />
             </div>
         </div>
                         
@@ -73,5 +64,5 @@ class Menudetail extends Component {
       );
     }
   }
-}
+
   export default Menudetail;
