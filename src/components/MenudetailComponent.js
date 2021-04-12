@@ -1,70 +1,77 @@
-import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import React, { Component } from 'react';
+import { Card, CardImg, CardText, CardBody,
+  CardTitle } from 'reactstrap';
 
-  function RenderMenudetails({menu}) {
-    if (menu != null) {
-    return (
-    <div>
-      <Card>
-        <CardImg src={menu.image} alt={menu.name} />
-        <CardBody>
-          <CardTitle>{menu.name}</CardTitle>
-          <CardText>{menu.content}</CardText>
-        </CardBody>
-      </Card> 
-    </div>            
-    );       
-  }
-  else {
-    return (
-        <div></div>
-    );
-  }
+class Menudetail extends Component {
+
+  componentDidMount() {
+    console.log("Menudetail Component componentDidMount invoked");
 }
 
-  function RenderComments({menu}) {
-    if (menu != null && menu.comments != null) {
+  componentDidUpdate() {
+    console.log("Menudetail Component componentDidUpdate invoked");
+}
 
-      return menu.comments.map(review => (      
-        <div key={review.id}>
-          <div><h4>Comments</h4></div>
-          <div>
-          <p>{review.rating}</p>
-          <p>{review.comment}</p>
-          </div>
-          <div>
-                    
+  renderMenudetails(y) {
+    return (
+      <Card>
+        <CardImg src={y.image} alt={y.name} />
+        <CardBody>
+          <CardTitle>{y.name}</CardTitle>
+          <CardText>{y.content}</CardText>
+        </CardBody>
+      </Card>             
+    );       
+  }
+
+  renderComments(z) {
+    const cmt = z.map((w) => {
+      return (
+        <li key={w.id}>
+          <p>{w.rating}</p>
+          <p>{w.comment}</p>
           <p>
-            -- {review.author}, &nbsp;
+            -- {w.author}, &nbsp;
           {new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
             month: 'long',
             day: '2-digit',
-          }).format(new Date(review.date))}
+          }).format(new Date(w.date))}
           </p>
-          </div>
-        </div>
-      ));
+        </li>
+      )
+    })
+    return(
+      <div>
+        <h5>Comments</h5>
+          <ul className="list-unstyled">
+            {cmt}
+          </ul>
+      </div>
+    );
   }
-        else {
-          return (
-              <div></div>
-          );
-      }
-  } 
-  const  Menudetail = (props) => {
+    render() {
 
-      return ( 
+      console.log("Menudetail Component render invoked");
+
+      if (this.props.menu != null) {
+        return ( 
         <div>
           <div>
-              <RenderMenudetails menu={props.menu} />
+              {this.renderMenudetails(this.props.menu)}
             </div>
             <div>
-              <RenderComments comments={props.menu} />
+              {this.renderComments(this.props.menu.comments)}
             </div>
         </div>
                         
         );
     }
-    
+    else {
+      return (
+        <div></div>
+      );
+    }
+  }
+}
   export default Menudetail;
