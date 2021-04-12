@@ -687,6 +687,20 @@ olovku u ruke i pišite po papiru, označujte. Trebat će još
 prakse za prebacivanje class komponenti u functional komponente, 
 a ovo su prvi primjeri, dobra podloga za guglati ovu temu i snati sve više.
 
+Video 25:
+Škola Reacr 25. dio: Header i Footer komponente
+Gist: https://gist.github.com/ivicakartelo/9a059ccc72f4103b8ecf61dfaae0be25
+GitHub: https://github.com/ivicakartelo/reactblog
+Video 25: Header i Footer komponente
+Nisam u videu rekao:
+- u index.js importirati:
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
+
+- u MainComponent.js importirati:
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
+
 
 
 
