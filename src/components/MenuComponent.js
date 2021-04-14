@@ -3,8 +3,6 @@ import { Card, CardImg, CardImgOverlay,
   CardTitle } from 'reactstrap';
   
 function RenderMenuItem ({menu}) { 
-  //render() {
-    //const menu = this.props.menus.map((menu) => {
     return ( 
       <div>
         <Card key={menu.menu_id}>
