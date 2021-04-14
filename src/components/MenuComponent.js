@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay,
   CardTitle } from 'reactstrap';
   
-function RenderMenuItem ({menu, onClick}) { 
+function RenderMenuItem ({menu}) { 
   //render() {
     //const menu = this.props.menus.map((menu) => {
     return ( 

@@ -43,7 +43,7 @@ class Header extends Component {
                       </Collapse>
                   </div>
               </Navbar>
-              <Jumbotron>
+              <div className="row-header">
                   <div className="container">
                       <div className="row row-header">
                           <div className="col-12 col-sm-6">
@@ -52,7 +52,7 @@ class Header extends Component {
                           </div>
                       </div>
                   </div>
-              </Jumbotron>
+              </div>
           </div>
       );
   }

@@ -701,6 +701,12 @@ import 'bootstrap-social/bootstrap-social.css';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 
+Video 26:
+React Router
+Instalacija React Routera: yarn add react-router-dom@4.2.2
+Gist: https://gist.github.com/ivicakartelo/56e4560f85e5fca011b377efecad852a
+GitHub: https://github.com/ivicakartelo/reactblog
+
 
 
 
