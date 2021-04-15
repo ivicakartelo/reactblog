@@ -4,33 +4,31 @@ import { Card, CardImg, CardImgOverlay,
   
 function RenderMenuItem ({menu}) { 
     return ( 
-      <div>
-        <Card key={menu.menu_id}>
+      
+          <Card key={menu.menu_id}>
             <CardImg src={menu.image} alt={menu.name} />
             <CardImgOverlay>
               <CardTitle>{menu.name}</CardTitle>
             </CardImgOverlay>
-          </Card>
-      </div>                     
-      );
+          </Card>                          
+    );
 };  
 const Menu = (props) => {
   const menu = props.menus.map((menu) => {
-    return (
-      <div>
+    return (      
+      <div className="col-12 col-md-6">
         <RenderMenuItem menu={menu} />
-      </div>
+      </div>              
     );
   });
 
-return (
-  <div>
+  return (  
     <div className="container">
-      <div className="row">
-        {menu}
-      </div>           
-    </div>               
-  </div>                          
-);
+    <div className="row">                   
+          {menu}
+        </div>  
+    </div>                             
+  );
 }
+
 export default Menu;      
