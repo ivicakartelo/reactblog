@@ -1,13 +1,14 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+  CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
     function RenderMenudetails({menu}) {
     return (
       <Card>
-        <CardImg src={menu.image} alt={menu.name} />
+        <CardImg top src={menu.image} alt={menu.name} />
         <CardBody>
           <CardTitle>{menu.name}</CardTitle>
           <CardText>{menu.content}</CardText>
@@ -47,15 +48,27 @@ import { Card, CardImg, CardText, CardBody,
 
       if (props.menu != null) {
         return ( 
-        <div>
-          <div>
-              <RenderMenudetails menu = {props.menu} />
+          
+            <div className="container">
+              <div className="row">
+                <Breadcrumb>
+                  <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                  <BreadcrumbItem active>{props.menu.name}</BreadcrumbItem>
+                </Breadcrumb>
+              <div className="col-12">
+              < h3>{props.menu.name}</h3>
+                <hr />
+              </div>
             </div>
-            <div>
-              <RenderComments comments = {props.menu.comments} />
-            </div>
-        </div>
-                        
+              <div className="row">
+                <div className="col-12 col-md">
+                  <RenderMenudetails menu = {props.menu} />
+                </div>                           
+                <div className="col-12 col-md">
+                  <RenderComments comments = {props.comments} />
+                </div>
+              </div>
+            </div>              
         );
     }
     else {

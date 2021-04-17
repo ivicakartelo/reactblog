@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
-import MenuDetail from './MenudetailComponent';
+import Menudetail from './MenudetailComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Contact from './ContactComponent';
@@ -34,12 +33,19 @@ class Main extends Component {
           />
       );
     }
+    const MenuWithId = ({match}) => {
+      return(
+          <Menudetail menu={this.state.menus.filter((menu) => menu.menu_id === parseInt(match.params.menuId,10))[0]}
+            comments={this.state.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))} />
+            );
+    };
     return (
       <div>
         <Header />
         <Switch>
               <Route path='/home' component={HomePage} />
               <Route exact path='/menu' component={() => <Menu menus={this.state.menus} />} />
+              <Route path='/menu/:menuId' component={MenuWithId} />
               <Route exact path='/contactus' component={Contact} />
               <Redirect to="/home" />
           </Switch>       
