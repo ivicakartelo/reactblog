@@ -6,7 +6,7 @@ export const AUTHORS = [
       designation: 'React',
       abbr: 'R',
       featured: false,
-      content: "KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
+      content: "KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
     },
     {
       id: 1,
@@ -15,7 +15,7 @@ export const AUTHORS = [
       designation: 'Angular',
       abbr: 'A',
         featured: false,
-      content: 'JHjksx s s snc nc dscsdkc sdkc sdkc ndskcv scvksd cksd cskdc skc skc scks ckn csknc skcn skncs ckns.'
+      content: 'JHjksx s s snc nc dscsdkc sdkc sdkc ndskcv scvksd cksd cskdc skc skc scks ckn csknc skcn skncs ckns. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export const AUTHORS = [
       designation: 'Vue.js',
       abbr: 'V',
         featured: false,
-      content: 'LKmjocslxc sm ckm ckdc dkcv dkcdkc dkvc dvkd dl vnkd vlnk vkdsv ndsv sdv kdv dfkv kdv dkv dkfv df.'
+      content: 'LKmjocslxc sm ckm ckdc dkcv dkcdkc dkvc dvkd dl vnkd vlnk vkdsv ndsv sdv kdv dfkv kdv dkv dkfv df. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.'
     },
     {
       id: 3,
@@ -33,6 +33,6 @@ export const AUTHORS = [
       designation: 'JavaScript',
       abbr: 'JS',
       featured: true,
-      content: 'KOnck ckd cndjc dkcjsdcv čksndmc vjčksd cvskdmvčc sdklcv skdnv cklvc dsjcv dsvjs vcjlksdv sdjv sjv vjsdv sjv.'
+      content: 'KOnck ckd cndjc dkcjsdcv čksndmc vjčksd cvskdmvčc sdklcv skdnv cklvc dsjcv dsvjs vcjlksdv sdjv sjv vjsdv sjv. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.'
     }
   ];
