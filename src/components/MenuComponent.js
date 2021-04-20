@@ -4,7 +4,7 @@ import { Card, CardImg, CardImgOverlay,
 import { Link } from 'react-router-dom';
   
 function RenderMenuItem ({menu}) { 
-    return ( 
+    return (
       
           <Card>
             <Link to={`/menu/${menu.menu_id}`} >

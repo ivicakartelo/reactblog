@@ -707,6 +707,34 @@ Instalacija React Routera: yarn add react-router-dom@4.2.2
 Gist: https://gist.github.com/ivicakartelo/56e4560f85e5fca011b377efecad852a
 GitHub: https://github.com/ivicakartelo/reactblog
 
+Video 27:
+Škola React 27. dio: Punjenje sadržajem Home komponente, filter
+commit: Single Page Application Part 1
+commit: Single Page Application Part 1 redizajn MenuComponent
+Gist: https://gist.github.com/ivicakartelo/...​
+GitHub: https://github.com/ivicakartelo/react...​
+
+Video 28:
+Škola React 28. dio: Reactstrap Margin, JavaScript Filter
+Za objašnjenje filtera sam koristio ovu adresu: https://developer.mozilla.org/en-US/d...​
+
+Video 29:
+Škola React 29. Kako učiti React
+
+Video 30:
+Škola React 30. dio: React Router parametri
+Gist: https://gist.github.com/ivicakartelo/...​
+GitHub: https://github.com/ivicakartelo/react...​
+
+Video 31:
+Škola React 31. dio: Testiraj svoje znanje - implementirajte komponentu About
+
+Video 32:
+Implementacija komponente About
+Gist: https://gist.github.com/ivicakartelo/22b49f25dadca67bc3b3157b82f7051f
+
+
+
 
 
 
