@@ -732,6 +732,7 @@ Video 31:
 Video 32:
 Implementacija komponente About
 Gist: https://gist.github.com/ivicakartelo/22b49f25dadca67bc3b3157b82f7051f
+GitHub: https://github.com/ivicakartelo/reactblog
 
 
 

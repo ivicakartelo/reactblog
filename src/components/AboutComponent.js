@@ -2,28 +2,28 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderAuthor({author}) {
+function RenderAuthor({x}) {
     return (
         <div className="row">               
             <div className="col-2">
-                <Media width="100%" className="mt-4" object src={author.image} alt={author.name} />
+                <Media width="100%" className="mt-4" object src={x.image} alt={x.name} />
             </div>
             <div className="col-10">
                 <Media body className="mt-4">  
-                    <Media heading>{author.name}</Media>
-                    <p>{author.designation}</p>
-                    <p>{author.abbr}</p>
-                    <p>{author.content}</p>
+                    <Media heading>{x.name}</Media>
+                    <p>{x.designation}</p>
+                    <p>{x.abbr}</p>
+                    <p>{x.content}</p>
                 </Media>
             </div>  
         </div> 
     );
 };
 const About = (props) => {
-    const about = props.authors.map((author) => {
+    const about = props.authors.map((y) => {
         return (      
-            <div className="col-12" key={author.id}>
-                <RenderAuthor author={author} />
+            <div className="col-12" key={y.id}>
+                <RenderAuthor x={y} />
             </div>              
         );
     });
