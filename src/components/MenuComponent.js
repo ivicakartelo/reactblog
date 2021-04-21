@@ -2,6 +2,15 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay,
   CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+
+function Menu(props) {
+  const menu = props.menus.map((menu) => {
+    return (      
+      <div className="col-12 col-md-6" key={menu.menu_id}>
+        <RenderMenuItem menu={menu} />
+      </div>              
+    );
+  })
   
 function RenderMenuItem ({menu}) { 
     return (
@@ -16,14 +25,7 @@ function RenderMenuItem ({menu}) {
           </Card>                          
     );
 };  
-const Menu = (props) => {
-  const menu = props.menus.map((menu) => {
-    return (      
-      <div className="col-12 col-md-6" key={menu.menu_id}>
-        <RenderMenuItem menu={menu} />
-      </div>              
-    );
-  });
+
 
   return (  
     <div className="container">

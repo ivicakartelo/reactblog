@@ -2,6 +2,26 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+/*
+const About = (props) => {
+    const about = props.authors.map((y) => {
+        return (      
+            <div className="col-12" key={y.id}>
+                <RenderAuthor x={y} />
+            </div>              
+        );
+    })
+*/
+function About(props) {
+
+    const about = props.authors.map((y) => {
+        return (
+            <div className="col-12" key={y.id}>
+              <RenderAuthor x ={y}/>
+            </div>
+        );
+    })
+
 function RenderAuthor({x}) {
     return (
         <div className="row">               
@@ -19,15 +39,6 @@ function RenderAuthor({x}) {
         </div> 
     );
 };
-const About = (props) => {
-    const about = props.authors.map((y) => {
-        return (      
-            <div className="col-12" key={y.id}>
-                <RenderAuthor x={y} />
-            </div>              
-        );
-    });
-
     return(
         <div className="container">
             <div className="row">
