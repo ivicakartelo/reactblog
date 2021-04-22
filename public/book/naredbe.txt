@@ -751,6 +751,19 @@ Sad je opravdan naziv funkcijska klasa jer je sve unutar vitičastih zagrada
 funkcije About i unutar zagrada funkcije Menu i nema zabune. 
 Imena komponeti Menu i About su sad i imena funkcija.
 
+Video 36.
+Škola React 36. dio: Controlled Form
+Gist: https://gist.github.com/ivicakartelo/b918d09e0627ac82b824230b5493e552
+GitHub: https://github.com/ivicakartelo/reactblog
+event.preventDefault(); Ovo znači da nakon klik na gumb Submit ostane forma kako je, 
+da forma ne nestane s ekrana.
+
+Video 37.
+"Controlled Form Validation"
+Gist: https://gist.github.com/ivicakartelo/09288937b38cf020b5ff6feaa6f74f2c
+
+
+
 
 
 
