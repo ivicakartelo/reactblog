@@ -762,6 +762,16 @@ Video 37.
 "Controlled Form Validation"
 Gist: https://gist.github.com/ivicakartelo/09288937b38cf020b5ff6feaa6f74f2c
 
+Video 38.
+Uncontrolled Form
+GitHub: https://github.com/ivicakartelo/reactblog
+Gist: https://gist.github.com/ivicakartelo/2c475698e8930bc5d9ed1ac766031a4d
+
+Video 39.
+Flux i Redux teorija
+
+
+
 
 
 
