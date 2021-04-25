@@ -780,6 +780,16 @@ React Redux Form
 https://gist.github.com/ivicakartelo/f755d14a33314844094561291745cabd
 GitHub: https://github.com/ivicakartelo/reactblog
 
+Video 42.
+https://gist.github.com/ivicakartelo/51795d079459f6fbe5ccbd76b9628b74
+GitHub: https://github.com/ivicakartelo/reactblog
+
+Video 43.
+React Redux Validate Form CommentForm na MenudetailsComponent
+Gist: https://gist.github.com/ivicakartelo/343a92eb96fccdc8e0c951aa0fda2cbe
+GitHub: https://github.com/ivicakartelo/reactblog
+
+
 
 
 
