@@ -789,6 +789,10 @@ React Redux Validate Form CommentForm na MenudetailsComponent
 Gist: https://gist.github.com/ivicakartelo/343a92eb96fccdc8e0c951aa0fda2cbe
 GitHub: https://github.com/ivicakartelo/reactblog
 
+Video 44.
+combineReducers
+Gist: https://gist.github.com/ivicakartelo/8224a81e8da855a7264a26e4ee0fdb84
+
 
 
 
