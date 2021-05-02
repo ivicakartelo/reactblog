@@ -16,7 +16,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
     );       
   }
 
-  function RenderComments({comments}) {
+  function RenderComments({comments, addComment, menuId}) {
     const cmt = comments.map((w) => {
       return (
         <li key={w.id}>
@@ -39,6 +39,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
           <ul className="list-unstyled">
             {cmt}
           </ul>
+          <CommentForm menuId={menuId} addComment={addComment} />
       </div>
     );
   }
@@ -64,8 +65,11 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
                   <RenderMenudetails x = {props.menu} />
                 </div>                           
                 <div className="col-12 col-md">
-                  <RenderComments comments = {props.comments} />
-                  <CommentForm />
+                  <RenderComments comments = {props.comments} 
+                  addComment={props.addComment}
+                  menuId={props.menu.menu_id} />
+                  
+                  
                 </div>
               </div>
             </div>              
@@ -98,9 +102,10 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
         }
       
         handleSubmit(values) {
-          console.log("Current State is: " + JSON.stringify(values));
-          alert("Current State is: " + JSON.stringify(values));
+          //console.log("Current State is: " + JSON.stringify(values));
+          //alert("Current State is: " + JSON.stringify(values));
           this.toggleModal();
+          this.props.addComment(this.props.menuId, values.rating, values.author, values.comment);
         }
       
         render() {
