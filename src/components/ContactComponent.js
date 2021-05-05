@@ -33,7 +33,7 @@ class Contact extends Component {
     render() {
         
     return(
-        <div className="container">
+        <div>
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>

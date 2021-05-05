@@ -49,7 +49,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
       if (props.menu != null) {
         return ( 
           
-            <div className="container">
+            <div>
               <div className="row">
                 <Breadcrumb>
                   <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>

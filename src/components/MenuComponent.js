@@ -28,7 +28,7 @@ function RenderMenuItem ({menu}) {
 
 
   return (  
-    <div className="container">
+    
       <div className="row">
         <Breadcrumb>
           <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
@@ -40,8 +40,7 @@ function RenderMenuItem ({menu}) {
           </div>                
                       
           {menu}
-        </div>  
-    </div>                             
+        </div>                            
   );
 }
 
