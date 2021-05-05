@@ -793,6 +793,31 @@ Video 44.
 combineReducers
 Gist: https://gist.github.com/ivicakartelo/8224a81e8da855a7264a26e4ee0fdb84
 
+Video 45.
+
+
+
+Video 46.
+Redux Action
+https://gist.github.com/ivicakartelo/d4386ab5612a0aabb8919d5da520b2ae
+
+Video 47.
+Redux pojmovi
+
+Video 48.
+mapStateToProps
+
+Video 49.
+mapDispatchToProps
+
+Video 50.
+Propse nazivam addComment1 a action ostavljam naziv 
+addComment i tako je sve puno jasnije. Dispach je taj koji prenosi propse na View 
+da bi isti sakupili podatke o akciji i funkcijom handleSubmit() prenijeli te podatke 
+u funkciju addComment(), dispach(), dispach addComment() u Reducer() gdje addComment() 
+vraća action kao plan object.
+
+
 
 
 

@@ -22,7 +22,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   
-  addComment: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment))
+  addComment1: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment))
 
 });
 
@@ -46,7 +46,7 @@ class Main extends Component {
       return(
           <Menudetail menu={this.props.menus.filter((menu) => menu.menu_id === parseInt(match.params.menuId,10))[0]}
             comments={this.props.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))} 
-            addComment={this.props.addComment} />
+            addComment1={this.props.addComment1} />
             );
     };
     return (
