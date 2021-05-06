@@ -8,7 +8,7 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { addComment } from '../redux/ActionCreators';
+import { addComment, fetchMenus } from '../redux/ActionCreators';
 
 
 const mapStateToProps = state => {
@@ -22,21 +22,23 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   
-  addComment1: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment))
+  addComment1: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment)),
+  fetchMenus: () => { dispatch(fetchMenus())}
 
 });
 
 class Main extends Component {
-
-  constructor(props) {
-    super(props);
+  componentDidMount() {
+    this.props.fetchMenus();
   }
 
   render() {
     const HomePage = () => {
       return(
           <Home 
-              menu={this.props.menus.filter((menu) => menu.featured)[0]}
+              menu={this.props.menus.menus.filter((menu) => menu.featured)[0]}
+              menusLoading={this.props.menus.isLoading}
+              menusErrMess={this.props.menus.errMess}
               promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
               author={this.props.authors.filter((author) => author.featured)[0]}
           />
@@ -44,7 +46,9 @@ class Main extends Component {
     }
     const MenuWithId = ({match}) => {
       return(
-          <Menudetail menu={this.props.menus.filter((menu) => menu.menu_id === parseInt(match.params.menuId,10))[0]}
+          <Menudetail menu={this.props.menus.menus.filter((menu) => menu.menu_id === parseInt(match.params.menuId,10))[0]}
+          isLoading={this.props.menus.isLoading}
+            errMess={this.props.menus.errMess}
             comments={this.props.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))} 
             addComment1={this.props.addComment1} />
             );

@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbItem, Modal, ModalHeader, ModalBody,
   Button, Row, Col, Label, CardImg, Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+import { Loading } from './LoadingComponent';
 
     function RenderMenudetails({x}) {
     return (
@@ -46,10 +47,28 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
   
     const Menudetail = (props) => {
 
-      if (props.menu != null) {
+      if (props.isLoading) {
+        return(
+            <div className="container">
+                <div className="row">            
+                    <Loading />
+                </div>
+            </div>
+        );
+    }
+    else if (props.errMess) {
+        return(
+            <div className="container">
+                <div className="row">            
+                    <h4>{props.errMess}</h4>
+                </div>
+            </div>
+        );
+    }
+    else if (props.menu != null) {
         return ( 
           
-            <div>
+            <div className="container">
               <div className="row">
                 <Breadcrumb>
                   <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
