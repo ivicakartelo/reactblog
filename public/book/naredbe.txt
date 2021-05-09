@@ -817,6 +817,14 @@ da bi isti sakupili podatke o akciji i funkcijom handleSubmit() prenijeli te pod
 u funkciju addComment(), dispach(), dispach addComment() u Reducer() gdje addComment() 
 vraća action kao plan object.
 
+Video 51.
+Redux Thunk and Redux Logger
+Gist: https://gist.github.com/ivicakartelo/c4b8e54fe75f1b40c624265920e8e73e
+
+Video 52.
+actions.reset
+Gist: https://gist.github.com/ivicakartelo/a53acb5368b8d0ce181f65d493828732
+
 
 
 
