@@ -8,7 +8,7 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { addComment, fetchMenus } from '../redux/ActionCreators';
+import { addComment, fetchMenus, fetchComments, fetchPromos } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 
 
@@ -25,13 +25,17 @@ const mapDispatchToProps = dispatch => ({
   
   addComment1: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment)),
   fetchMenus1: () => { dispatch(fetchMenus())},
-  resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
+  resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
+  fetchComments: () => dispatch(fetchComments()),
+  fetchPromos: () => dispatch(fetchPromos())
 
 });
 
 class Main extends Component {
   componentDidMount() {
     this.props.fetchMenus1();
+    this.props.fetchComments();
+    this.props.fetchPromos();
   }
 
   render() {
@@ -41,7 +45,9 @@ class Main extends Component {
               menu={this.props.menus.menus.filter((menu) => menu.featured)[0]}
               menusLoading={this.props.menus.isLoading}
               menusErrMess={this.props.menus.errMess}
-              promotion={this.props.promotions.filter((promo) => promo.featured)[0]}
+              promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
+              promoLoading={this.props.promotions.isLoading}
+              promoErrMess={this.props.promotions.errMess}
               author={this.props.authors.filter((author) => author.featured)[0]}
           />
       );
@@ -51,7 +57,8 @@ class Main extends Component {
           <Menudetail menu={this.props.menus.menus.filter((menu) => menu.menu_id === parseInt(match.params.menuId,10))[0]}
           isLoading={this.props.menus.isLoading}
             errMess={this.props.menus.errMess}
-            comments={this.props.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))} 
+            comments={this.props.comments.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))}
+            commentsErrMess={this.props.comments.errMess}
             addComment1={this.props.addComment1} />
             );
     };

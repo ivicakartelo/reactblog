@@ -4,11 +4,13 @@ import { Breadcrumb, BreadcrumbItem, Modal, ModalHeader, ModalBody,
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
+import { baseUrl } from '../shared/baseUrl';
 
     function RenderMenudetails({x}) {
     return (
       <Card>
-        <CardImg top src={x.image} alt={x.name} />
+        <CardImg top src={baseUrl + x.image} alt={x.name} />
+        
         <CardBody>
           <CardTitle>{x.name}</CardTitle>
           <CardText>{x.content}</CardText>
