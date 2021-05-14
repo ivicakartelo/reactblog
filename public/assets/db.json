@@ -1,0 +1,260 @@
+{
+	"menus":[
+        {
+        "menu_id": 0,
+        "name":"Lorem ipsum dolor",
+        "image": "images/1.jpg",
+        "content":"Lorem ipsum dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante",
+        "published":"2021-03-012",
+        "featured": true
+        },
+        {
+        "menu_id": 1,
+        "name":"Consectetur adipiscing",
+        "image": "images/2.jpg",
+        "content": "Consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante",
+        "published":"2021-03-012",
+        "featured": false
+        },
+        {
+        "menu_id": 2,
+        "name":"Dolor sit amet",
+        "image": "images/3.jpg",
+        "content":"Dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante",
+        "published":"2021-03-012",
+        "featured": false
+        },
+        {
+        "menu_id": 3,
+        "name":"Orci ligula",
+        "image": "images/4.jpg",
+        "content":"Orci ligula dolor sit amet consectetur adipiscing elit Proin orci ligula, fringilla ac venenatis a, aliquam a magna. Donec vitae nisi nec enim fermentum gravida. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante",
+        "published":"2021-03-012",
+        "featured": false
+        }
+    ],
+	"comments": [
+    {
+        "id": 0,
+        "menuId": 0,
+        "rating": 5,
+        "comment": "Imagine all the eatables, living in conFusion!",
+        "author": "Pkmxls",
+        "date": "2021-10-16T17:57:28.556094Z"
+    },
+    {
+        "id": 1,
+        "menuId": 0,
+        "rating": 4,
+        "comment": "Omcskcsklc soc sc scls clsc slkmc scls cslc slkc scsj cso cslkcs csc sklc sckl scs cslkc sckls cklsc",
+        "author": "Rosamfpsaf",
+        "date": "2021-09-05T17:57:28.556094Z"
+    },
+    {
+        "id": 2,
+        "menuId": 0,
+        "rating": 3,
+        "comment": "Lkmnxlks dms ks ksd sknd s!",
+        "author": "Pjs cdknwc xwsicd",
+        "date": "2021-02-13T17:57:28.556094Z"
+    },
+    {
+        "id": 3,
+        "menuId": 0,
+        "rating": 4,
+        "comment": "KJInskaki xi xs x!",
+        "author": "Ojcsc",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 4,
+        "menuId": 0,
+        "rating": 2,
+        "comment": "Pkjcosncksj cskjc skjc!",
+        "author": "ZVgvtxsxvszgvx",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 5,
+        "menuId": 1,
+        "rating": 5,
+        "comment": "KInxks xks xksx cskxc sxcs!",
+        "author": "Duhdbducdbc",
+        "date": "2021-10-16T17:57:28.556094Z"
+    },
+    {
+        "id": 6,
+        "menuId": 1,
+        "rating": 4,
+        "comment": "LKjncs cmks cslkc slc soc nss xcsol cs cs sss s lksm ssss sklssk km skls!",
+        "author": "Ojicosc nskc s",
+        "date": "2021-09-05T17:57:28.556094Z"
+    },
+    {
+        "id": 7,
+        "menuId": 1,
+        "rating": 3,
+        "comment": "Pokaxoksa xkmlx jsx skx skx!",
+        "author": "Okmnxa xsx skjlx",
+        "date": "2021-02-13T17:57:28.556094Z"
+    },
+    {
+        "id": 8,
+        "menuId": 1,
+        "rating": 4,
+        "comment": "Oknxkls xcksmx ksx skx sxkns xks sknx skx snxk snkxs knx nsxknsx nksk nxcs!",
+        "author": "IJbnxks xknsxc scx skcs",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 9,
+        "menuId": 1,
+        "rating": 2,
+        "comment": "Pkmjxpks mxcks xcskoxc nsxck nsokcxs ncxkos!",
+        "author": "Pogjkgponmghponmghn",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 10,
+        "menuId": 2,
+        "rating": 5,
+        "comment": "Omcxoskcjmds cjikoc dikc dc dcki d cdknc kd!",
+        "author": "Pokx sx nx sxjx s",
+        "date": "2021-10-16T17:57:28.556094Z"
+    },
+    {
+        "id": 11,
+        "menuId": 2,
+        "rating": 4,
+        "comment": "POokcps clmkscokscnoskc soc nscoks colks nc skolcs!",
+        "author": "Pjmxopksx kls xsx slx s",
+        "date": "2021-09-05T17:57:28.556094Z"
+    },
+    {
+        "id": 12,
+        "menuId": 2,
+        "rating": 3,
+        "comment": "Ojmoxcs lkc scs cks ckjsc skc skc!",
+        "author": "Inxjs xkjs xksxc ksx skx skxs",
+        "date": "2021-02-13T17:57:28.556094Z"
+    },
+    {
+        "id": 13,
+        "menuId": 2,
+        "rating": 4,
+        "comment": "Onmoxcs cmlks cols csc slc slkc sklc s!",
+        "author": "Onjscsn Opksjdcs",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 14,
+        "menuId": 2,
+        "rating": 2,
+        "comment": "POIIjcos xscos ncos cosc soc jsc so jcsjcsjkoic sc sjkc sjcs!",
+        "author": "POmpks xcls cxlsmxc",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 15,
+        "menuId": 3,
+        "rating": 5,
+        "comment": "POjkoakxnakox jax jkixa!",
+        "author": "Pjyockxymxc",
+        "date": "2021-10-16T17:57:28.556094Z"
+    },
+    {
+        "id": 16,
+        "menuId": 3,
+        "rating": 4,
+        "comment": "OJInsck skmlc smkc sckmls csmklc sklc scsklcm!",
+        "author": "POmpkxs xl mksaxs",
+        "date": "2021-09-05T17:57:28.556094Z"
+    },
+    {
+        "id": 17,
+        "menuId": 3,
+        "rating": 3,
+        "comment": "POkmypaklyx lsax kmslkm,xcs xclsc!",
+        "author": "PMpkxm sklyxc",
+        "date": "2021-02-13T17:57:28.556094Z"
+    },
+    {
+        "id": 18,
+        "menuId": 3,
+        "rating": 4,
+        "comment": "LOKmnlys xslmc slmc lmc ld clmd d!",
+        "author": "POKlokx ykmxkmyx ky",
+        "date": "2021-12-02T17:57:28.556094Z"
+    },
+    {
+        "id": 19,
+        "menuId": 3,
+        "rating": 2,
+        "comment": "OMJokl xs xlmsx sx slxskj x!",
+        "author": "Pmkxlk slxks xls",
+        "date": "2021-12-02T17:57:28.556094Z"
+    }
+],
+"authors": [
+    {
+      "id": 0,
+      "name": "LKNmlks",
+      "image": "images/author.png",
+      "designation": "React",
+      "abbr": "R",
+      "featured": false,
+      "content": "KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
+    },
+    {
+      "id": 1,
+      "name": "Pokxcls ls sc s",
+      "image": "images/author.png",
+      "designation": "Angular",
+      "abbr": "A",
+      "featured": false,
+      "content": "JHjksx s s snc nc dscsdkc sdkc sdkc ndskcv scvksd cksd cskdc skc skc scks ckn csknc skcn skncs ckns. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc.KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
+    },
+    {
+      "id": 2,
+      "name": "LOmalx l sx smxs xls",
+      "image": "images/author.png",
+      "designation": "Vue.js",
+      "abbr": "V",
+      "featured": false,
+      "content": "LKmjocslxc sm ckm ckdc dkcv dkcdkc dkvc dvkd dl vnkd vlnk vkdsv ndsv sdv kdv dfkv kdv dkv dkfv df. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
+    },
+    {
+      "id": 3,
+      "name": "KLncmsl,kc mslc s",
+      "image": "images/author.png",
+      "designation": "JavaScript",
+      "abbr": "JS",
+      "featured": true,
+      "content": "KOnck ckd cndjc dkcjsdcv čksndmc vjčksd cvskdmvčc sdklcv skdnv cklvc dsjcv dsvjs vcjlksdv sdjv sjv vjsdv sjv. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc. KJLNn xs x ks skc dkc  dckmd kcmd ckd cdkc dkmc dkc dkc dkcd ckd cd cdkc dkcd ck dkc dkcd kc dc."
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "Lkmxlcks ls lsx cs",
+      "image": "images/4.png",
+      "label": "Last",
+      "price": "125.99",
+      "featured": true,
+      "content": "KBNikjnxax akn aix asi jsa cdsa cdksajn jusa sj dsjcd a cdasc dakji dasnc da cdka a dca cdaka cakka nc ka kcaknc acka. Cras placerat aliquam mi, eget faucibus sem hendrerit non. Aenean nec mauris efficitur, tincidunt tortor non, pretium augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus ultrices massa in aliquet. In at tellus sit amet nibh eleifend semper non sit amet tortor. Mauris non facilisis tortor, vel volutpat eros. Donec id varius dui nec eleifend augue Nullam ligula eros, finibus id turpis eu imperdiet lobortis mauris Suspendisse turpis sem accumsan sed porta sit amet egestas ut ante Mauris non mauris tincidunt viverra nibh et lobortis ante"
+    }
+  ],
+  "feedback": [
+    {
+      "firstname": "ababababa",
+      "lastname": "cdcdcd",
+      "telnum": "1234567",
+      "email": "ababababa.mmm",
+      "agree": true,
+      "contactType": "Email",
+      "message": "lkdha dlknaslkd lkanjdklas",
+      "date": "2021-04-04T09:41:49.890Z",
+      "id": 1
+    }
+  ]
+}
