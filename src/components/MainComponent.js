@@ -8,7 +8,7 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { addComment, fetchMenus, fetchComments, fetchPromos } from '../redux/ActionCreators';
+import { postComment, fetchMenus, fetchComments, fetchPromos } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 
 
@@ -23,7 +23,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   
-  addComment1: (menuId, rating, author, comment) => dispatch(addComment(menuId, rating, author, comment)),
+  postComment1: (menuId, rating, author, comment) => dispatch(postComment(menuId, rating, author, comment)),
   fetchMenus1: () => { dispatch(fetchMenus())},
   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
   fetchComments: () => dispatch(fetchComments()),
@@ -59,7 +59,7 @@ class Main extends Component {
             errMess={this.props.menus.errMess}
             comments={this.props.comments.comments.filter((comment) => comment.menuId === parseInt(match.params.menuId,10))}
             commentsErrMess={this.props.comments.errMess}
-            addComment1={this.props.addComment1} />
+            postComment1={this.props.postComment1} />
             );
     };
     return (

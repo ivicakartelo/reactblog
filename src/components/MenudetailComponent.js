@@ -19,7 +19,7 @@ import { baseUrl } from '../shared/baseUrl';
     );       
   }
 
-  function RenderComments({comments, addComment1, menuId}) {
+  function RenderComments({comments, postComment1, menuId}) {
     const cmt = comments.map((w) => {
       return (
         <li key={w.id}>
@@ -42,7 +42,7 @@ import { baseUrl } from '../shared/baseUrl';
           <ul className="list-unstyled">
             {cmt}
           </ul>
-          <CommentForm menuId={menuId} addComment1={addComment1} />
+          <CommentForm menuId={menuId} postComment1={postComment1} />
       </div>
     );
   }
@@ -87,7 +87,7 @@ import { baseUrl } from '../shared/baseUrl';
                 </div>                           
                 <div className="col-12 col-md">
                   <RenderComments comments = {props.comments} 
-                  addComment1={props.addComment1}
+                  postComment1={props.postComment1}
                   menuId={props.menu.menu_id} />
                 </div>
               </div>
@@ -122,7 +122,7 @@ import { baseUrl } from '../shared/baseUrl';
       
         handleSubmit(values) {
           this.toggleModal();
-          this.props.addComment1(this.props.menuId, values.rating, values.author, values.comment);
+          this.props.postComment1(this.props.menuId, values.rating, values.author, values.comment);
         }
       
         render() {
