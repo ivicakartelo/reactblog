@@ -5,23 +5,31 @@ import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
     function RenderMenudetails({x}) {
     return (
-      <Card>
-        <CardImg top src={baseUrl + x.image} alt={x.name} />
-        
-        <CardBody>
-          <CardTitle>{x.name}</CardTitle>
-          <CardText>{x.content}</CardText>
-        </CardBody>
-      </Card>             
+      <FadeTransform
+                in
+                transformProps={{
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }}>
+        <Card>
+          <CardImg top src={baseUrl + x.image} alt={x.name} />
+          
+          <CardBody>
+            <CardTitle>{x.name}</CardTitle>
+            <CardText>{x.content}</CardText>
+          </CardBody>
+        </Card>   
+      </FadeTransform>          
     );       
   }
 
   function RenderComments({comments, postComment1, menuId}) {
     const cmt = comments.map((w) => {
       return (
+        <Fade in>
         <li key={w.id}>
           <p>{w.rating}</p>
           <p>{w.comment}</p>
@@ -34,13 +42,16 @@ import { baseUrl } from '../shared/baseUrl';
           }).format(new Date(w.date))}
           </p>
         </li>
+        </Fade>
       )
     })
     return(
       <div>
         <h5>Comments</h5>
           <ul className="list-unstyled">
+          <Stagger in>
             {cmt}
+          </Stagger>
           </ul>
           <CommentForm menuId={menuId} postComment1={postComment1} />
       </div>
