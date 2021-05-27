@@ -1,6 +1,7 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../shared/baseUrl';
 
 /*
 const About = (props) => {
@@ -14,7 +15,7 @@ const About = (props) => {
 */
 function About(props) {
 
-    const about = props.authors.map((y) => {
+    const about = props.authors.authors.map((y) => {
         return (
             <div className="col-12" key={y.id}>
               <RenderAuthor x ={y}/>
@@ -26,7 +27,7 @@ function RenderAuthor({x}) {
     return (
         <div className="row">               
             <div className="col-2">
-                <Media width="100%" className="mt-4" object src={x.image} alt={x.name} />
+                <Media width="100%" className="mt-4" object src={baseUrl + x.image} alt={x.name} />
             </div>
             <div className="col-10">
                 <Media body className="mt-4">  

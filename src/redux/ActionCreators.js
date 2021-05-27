@@ -143,3 +143,27 @@ export const addPromos = (promos) => ({
     type: ActionTypes.ADD_PROMOS,
     payload: promos
 });
+
+
+export const fetchAuthors = () => (dispatch) => {
+    
+  dispatch(authorsLoading());
+
+  return fetch(baseUrl + 'authors')
+  .then(response => response.json())
+  .then(authors => dispatch(addAuthors(authors)));
+}
+
+export const authorsLoading = () => ({
+  type: ActionTypes.AUTHORS_LOADING
+});
+
+export const authorsFailed = (errmess) => ({
+  type: ActionTypes.AUTHORS_FAILED,
+  payload: errmess
+});
+
+export const addAuthors = (authors) => ({
+  type: ActionTypes.ADD_AUTHORS,
+  payload: authors
+});

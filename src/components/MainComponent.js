@@ -8,7 +8,7 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { postComment, fetchMenus, fetchComments, fetchPromos } from '../redux/ActionCreators';
+import { postComment, fetchMenus, fetchComments, fetchPromos, fetchAuthors } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -28,7 +28,8 @@ const mapDispatchToProps = dispatch => ({
   fetchMenus1: () => { dispatch(fetchMenus())},
   resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
   fetchComments: () => dispatch(fetchComments()),
-  fetchPromos: () => dispatch(fetchPromos())
+  fetchPromos: () => dispatch(fetchPromos()),
+  fetchAuthors: () => dispatch(fetchAuthors())
 
 });
 
@@ -37,6 +38,7 @@ class Main extends Component {
     this.props.fetchMenus1();
     this.props.fetchComments();
     this.props.fetchPromos();
+    this.props.fetchAuthors();
   }
 
   render() {
@@ -49,7 +51,9 @@ class Main extends Component {
               promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]}
               promoLoading={this.props.promotions.isLoading}
               promoErrMess={this.props.promotions.errMess}
-              author={this.props.authors.filter((author) => author.featured)[0]}
+              author={this.props.authors.authors.filter((author) => author.featured)[0]}
+              authorLoading={this.props.authors.isLoading}
+              authorErrMess={this.props.authors.errMess}
           />
       );
     }
