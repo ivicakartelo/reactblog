@@ -2,19 +2,23 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
+import { Fade, Stagger } from 'react-animation-components';
 
 function About(props) {
 
     const about = props.authors.authors.map((y) => {
         return (
             <div className="col-12" key={y.id}>
+                <Stagger in>
               <RenderAuthor x ={y}/>
+              </Stagger>
             </div>
         );
     })
 
 function RenderAuthor({x}) {
     return (
+        <Fade in>
         <div className="row">               
             <div className="col-2">
                 <Media width="100%" className="mt-4" object src={baseUrl + x.image} alt={x.name} />
@@ -28,6 +32,7 @@ function RenderAuthor({x}) {
                 </Media>
             </div>  
         </div> 
+        </Fade>
     );
 };
     return(
@@ -84,7 +89,9 @@ function RenderAuthor({x}) {
                     <h2>Authors</h2>
                 </div>
                 <div className="col-12">
+                
                     {about}
+                
                 </div>
             </div>
         </div>
