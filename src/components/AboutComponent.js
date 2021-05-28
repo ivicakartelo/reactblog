@@ -3,16 +3,6 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 
-/*
-const About = (props) => {
-    const about = props.authors.map((y) => {
-        return (      
-            <div className="col-12" key={y.id}>
-                <RenderAuthor x={y} />
-            </div>              
-        );
-    })
-*/
 function About(props) {
 
     const about = props.authors.authors.map((y) => {
